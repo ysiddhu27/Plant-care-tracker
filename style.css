@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f8e9;
+    color: #263238;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2e7d32;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.welcome {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.plant-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.plant-card h2 {
+    color: #2e7d32;
+    margin-bottom: 15px;
+}
+
+.plant-card p {
+    margin: 8px 0;
+}
+
+button {
+    background-color: #43a047;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #2e7d32;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+    color: #555;
+}
