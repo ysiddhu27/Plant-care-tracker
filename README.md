@@ -2,7 +2,7 @@
 # Plant Care Tracker
 
 ## Project Description
-Plant Care Tracker Version A is an application that helps users
+Plant Care Tracker Version A  is an application that helps users
 manage their plants and track watering, sunlight and
 next-care dates.
 
