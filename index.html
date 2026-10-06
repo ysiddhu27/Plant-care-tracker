@@ -1,60 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Plant Care Tracker</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
- 
+
 <body>
 
-    <header>
-        <h1>🌱 Plant Care Tracker</h1>
-        <p>Take care of your plants with ease</p>
-    </header>
+<header>
+    <h1>🌱 Plant Care Tracker</h1>
+    <p>Take care of your plants with ease</p>
+</header>
 
-    <main>
+<main>
 
-        <section class="welcome">
-            <h2>My Plants</h2>
-            <p>Track watering, sunlight and next-care dates.</p>
+    <section class="welcome">
+        <h2>My Plants</h2>
+        <p>Track watering, sunlight and next-care dates.</p>
 
-            <button id="addPlantBtn">➕ Add Plant</button>
-        </section>
+        <button id="addPlantBtn">➕ Add Plant</button>
+    </section>
 
+    <section id="plantList">
 
-        <section id="plantList">
+        <div class="plant-card">
+            <h2>🌿 Money Plant</h2>
 
-            <div class="plant-card">
+            <p>💧 Water: Every 3 days</p>
+            <p>☀️ Sunlight: Partial sunlight</p>
+            <p>📅 Next Care: October 8</p>
 
-                <h2>🌿 Money Plant</h2>
+            <button class="water-btn">Mark as Watered</button>
+            <button class="edit-btn">✏️ Edit</button>
+            <button class="delete-btn">🗑️ Delete</button>
+        </div>
 
-                <p>💧 Water: Every 3 days</p>
+    </section>
 
-                <p>☀️ Sunlight: Partial sunlight</p>
+</main>
 
-                <p>📅 Next Care: October 8</p>
+<footer>
+    <p>Plant Care Tracker © 2026</p>
+</footer>
 
-                <button class="water-btn">Mark as Watered</button>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <footer>
-        <p>Plant Care Tracker © 2026</p>
-    </footer>
-
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
