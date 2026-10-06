@@ -6,15 +6,20 @@ addPlantBtn.addEventListener("click", function () {
 
     const name = prompt("Enter plant name:");
 
-    if (!name) {
-        return;
-    }
+    if (!name) return;
 
-    const water = prompt("How often should you water it?", "Every 3 days");
+    const water = prompt(
+        "How often should you water it?",
+        "Every 3 days"
+    );
 
-    const sunlight = prompt("Enter sunlight requirement:", "Partial sunlight");
+    const sunlight = prompt(
+        "Enter sunlight requirement:",
+        "Partial sunlight"
+    );
 
     const plantCard = document.createElement("div");
+
     plantCard.className = "plant-card";
 
     plantCard.innerHTML = `
@@ -26,7 +31,7 @@ addPlantBtn.addEventListener("click", function () {
 
         <p>📅 Next Care: Today</p>
 
-        <button class="water-btn">Mark as Watered</button>
+        <button class="water-btn">💧 Mark as Watered</button>
 
         <button class="edit-btn">✏️ Edit</button>
 
@@ -39,48 +44,68 @@ addPlantBtn.addEventListener("click", function () {
 });
 
 
-// Edit and Delete functions
+// Edit, Delete and Water functions
 function addButtonFunctions(plantCard) {
 
     const editBtn = plantCard.querySelector(".edit-btn");
     const deleteBtn = plantCard.querySelector(".delete-btn");
     const waterBtn = plantCard.querySelector(".water-btn");
 
-    // Edit
+
+    // EDIT
     editBtn.addEventListener("click", function () {
 
-        const currentName = plantCard.querySelector("h2").textContent
+        const heading = plantCard.querySelector("h2");
+
+        const currentName = heading.textContent
             .replace("🌱", "")
             .trim();
 
-        const newName = prompt("Enter new plant name:", currentName);
+        const newName = prompt(
+            "Enter new plant name:",
+            currentName
+        );
 
-        if (newName) {
-            plantCard.querySelector("h2").textContent = "🌱 " + newName;
+        if (newName && newName.trim() !== "") {
+
+            heading.textContent = "🌱 " + newName.trim();
+
         }
+
     });
 
 
-    // Delete
+    // DELETE
     deleteBtn.addEventListener("click", function () {
 
-        const confirmDelete = confirm("Do you want to delete this plant?");
+        const confirmDelete = confirm(
+            "Do you want to delete this plant?"
+        );
 
         if (confirmDelete) {
+
             plantCard.remove();
+
         }
+
     });
 
 
-    // Water
+    // WATER
     waterBtn.addEventListener("click", function () {
 
         waterBtn.textContent = "✓ Watered Today";
+
     });
+
 }
 
 
-// Enable buttons for the existing plant
-document.querySelectorAll(".plant-card").forEach(function (plantCard) {
-    addButtonFunctions(plantCard);
-});
+// Enable buttons for existing plants
+document
+    .querySelectorAll(".plant-card")
+    .forEach(function (plantCard) {
+
+        addButtonFunctions(plantCard);
+
+    });
