@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Plant Care Tracker</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
-
+ 
 <body>
 
     <header>
@@ -19,23 +22,39 @@
         <section class="welcome">
             <h2>My Plants</h2>
             <p>Track watering, sunlight and next-care dates.</p>
+
+            <button id="addPlantBtn">➕ Add Plant</button>
         </section>
 
-        <section class="plant-card">
-            <h2>🌿 Money Plant</h2>
-            <p>💧 Water: Every 3 days</p>
-            <p>☀️ Sunlight: Partial sunlight</p>
-            <p>📅 Next Care: October 8</p>
 
-            <button>Mark as Watered</button>
+        <section id="plantList">
+
+            <div class="plant-card">
+
+                <h2>🌿 Money Plant</h2>
+
+                <p>💧 Water: Every 3 days</p>
+
+                <p>☀️ Sunlight: Partial sunlight</p>
+
+                <p>📅 Next Care: October 8</p>
+
+                <button class="water-btn">Mark as Watered</button>
+
+            </div>
+
         </section>
 
     </main>
 
+
     <footer>
         <p>Plant Care Tracker © 2026</p>
     </footer>
+
+
     <script src="script.js"></script>
 
 </body>
+
 </html>
