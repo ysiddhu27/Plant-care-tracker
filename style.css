@@ -1,25 +1,23 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    background: #0b1605;
-    color: #e8f5e9;
-    min-height: 100vh;
+    background: #001a00;
+    color: white;
 }
 
 header {
-    background: #003d00;
     text-align: center;
-    padding: 50px 20px;
+    padding: 40px 20px;
+    background: #003300;
 }
 
 header h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
+    font-size: 42px;
+    color: #32cd32;
 }
 
 header p {
@@ -27,94 +25,85 @@ header p {
 }
 
 main {
-    max-width: 800px;
+    padding: 30px 20px;
+    max-width: 900px;
     margin: auto;
-    padding: 50px 20px;
 }
 
 .welcome {
     text-align: center;
-    margin-bottom: 40px;
+    padding: 30px;
 }
 
 .welcome h2 {
-    font-size: 32px;
-    margin-bottom: 15px;
+    font-size: 36px;
 }
 
 .welcome p {
     font-size: 20px;
-    margin-bottom: 25px;
 }
 
-#addPlantBtn {
-    background: #00a51a;
-    color: white;
+button {
     border: none;
-    padding: 14px 25px;
-    border-radius: 10px;
-    font-size: 17px;
-    cursor: pointer;
-}
-
-#addPlantBtn:hover {
-    background: #008f16;
-}
-
-.plant-card {
-    background: #202020;
-    padding: 30px;
-    border-radius: 25px;
-    margin-bottom: 25px;
-}
-
-.plant-card h2 {
-    color: #72e278;
-    margin-bottom: 25px;
-}
-
-.plant-card p {
-    font-size: 18px;
-    margin: 15px 0;
-}
-
-.water-btn {
-    background: #008f12;
-    color: white;
-    border: none;
-    padding: 14px 25px;
+    padding: 14px 24px;
     border-radius: 10px;
     font-size: 16px;
     cursor: pointer;
-    margin-top: 15px;
+    margin: 8px 5px;
+}
+
+#addPlantBtn {
+    background: green;
+    color: white;
+    font-size: 20px;
+}
+
+.plant-card {
+    background: #001000;
+    padding: 30px;
+    margin: 25px 0;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 255, 0, 0.15);
+}
+
+.plant-card h2 {
+    color: #32cd32;
+    font-size: 30px;
+}
+
+.plant-card p {
+    font-size: 20px;
+}
+
+.water-btn {
+    background: green;
+    color: white;
+}
+
+.edit-btn {
+    background: #1976d2;
+    color: white;
+}
+
+.delete-btn {
+    background: #d32f2f;
+    color: white;
 }
 
 .water-btn:hover {
-    background: #00a51a;
+    background: #005a00;
+}
+
+.edit-btn:hover {
+    background: #0d47a1;
+}
+
+.delete-btn:hover {
+    background: #9a0000;
 }
 
 footer {
     text-align: center;
-    padding: 50px 20px;
-    font-size: 18px;
-    color: #cccccc;
-}
-
-@media (max-width: 600px) {
-
-    header h1 {
-        font-size: 32px;
-    }
-
-    header p {
-        font-size: 18px;
-    }
-
-    .welcome h2 {
-        font-size: 28px;
-    }
-
-    .plant-card {
-        padding: 25px;
-    }
+    padding: 40px;
+    color: gray;
 }
